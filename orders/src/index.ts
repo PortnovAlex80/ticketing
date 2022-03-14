@@ -7,7 +7,7 @@ import { ExpirationCompleteListener} from "./events/listeners/expiration-complet
 import { PaymentCreatedListener} from "./events/listeners/payment-created-listener";
 
 const start = async () => {
-
+console.log('starting///')
     if (!process.env.JWT_KEY) {
         throw new Error('Secret failed JWT_KEY');
     }
